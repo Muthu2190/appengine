@@ -1,0 +1,10 @@
+runtime: python39
+
+handlers:
+- url: /
+  static_files: theme/Index.html
+  upload: theme/Index.html
+
+- url: /(.*)
+  static_files: theme/\1
+  upload: theme/(.*)
